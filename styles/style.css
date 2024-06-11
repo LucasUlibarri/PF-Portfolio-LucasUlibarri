@@ -16,12 +16,12 @@
 }
 @font-face {
     font-family: 'Satoishi';
-    src: url(../assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf);
+    src: url(../assets/fonts/Satoshi_Complete/Satoshi-Regular.otf);
     font-weight: 400;
 }
 @font-face {
     font-family: 'Satoishi';
-    src: url(../assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf);
+    src: url(../assets/fonts/Satoshi_Complete/Satoshi-Bold.otf);
     font-weight: 700;
 }
 /*Body*/
@@ -108,9 +108,9 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
 }
-.grid--2-2075{
+.grid--2-3560{
     display: grid;
-    grid-template-columns: 20% 75%;
+    grid-template-columns: 35% 60%;
     column-gap: 5%;
 }
 /*Header*/
@@ -156,8 +156,7 @@ header{
 }
 /*Card*/
 .card{
-    border: 1px solid var(--secondary-color);
-    padding: 5%;
+    padding: 5% 10%;
     background-color: transparent;
     border-radius: 0;
 }
@@ -260,10 +259,12 @@ footer h4{
     font-family: var(--titles-type);
     color: var(--accents-color);
     font-size: 2rem;
+    margin-bottom: 0;
 }
 .experience__info--black{
     font-weight: 700;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    color: var(--accents-color);
 }
 /*Play*/
 .image--gallery{
@@ -271,11 +272,6 @@ footer h4{
     row-gap: 5%;
 }
 /*Contact*/
-.hero--contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-}
 .form-control{
     width: 100%;
     border: 2px solid var(--secondary-color);
@@ -291,4 +287,9 @@ footer h4{
 }
 .contact-form button{
     width: 100%;
+}
+/*Inner page*/
+.project-quote h4{
+    font-size: 2.2rem;
+    text-align: center;
 }
