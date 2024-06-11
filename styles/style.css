@@ -146,6 +146,9 @@ header{
 .home--hero{
     padding: 5% 5% 10%;
 }
+.hero:not(.home--hero){
+    margin: 5% auto;
+}
 .hero h1{
     line-height: 105%;
     letter-spacing: .15rem;
@@ -238,7 +241,7 @@ footer h4{
     font-family: var(--titles-type);
     color: var(--secondary-color);
     padding-left: 5%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     list-style: none;
     flex-shrink: 0;
 }
