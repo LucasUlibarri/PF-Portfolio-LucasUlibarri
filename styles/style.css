@@ -64,6 +64,8 @@ p{
 /*Images*/
 img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .img--50{
     height: 50vh;
@@ -121,6 +123,12 @@ img{
     grid-template-columns: 35% 60%;
     column-gap: 5%;
 }
+.grid--2-exp{
+    display: grid;
+    grid-template-columns: 20% 78%;
+    gap: 2%;
+    margin: 5% 0;
+}
 /*Header*/
 header{
     position:sticky;
@@ -175,6 +183,13 @@ header{
     color: var(--secondary-color);
     margin-bottom: 4%;
 }
+.card--fw{
+    padding: 0;
+}
+.card--fw h3{
+    text-align: center;
+    margin-bottom: 5%;
+}
 /*Home--Case Studies*/
 .casestudies{
     background-color: var(--secondary-color);
@@ -201,6 +216,9 @@ footer{
     margin: 0 5% 2%;
     background-color: var(--secondary-color);
     padding: 3% 5%;
+}
+footer ul{
+    padding: 0;
 }
 .footer-nav{
     text-align: center;
@@ -254,12 +272,6 @@ footer h4{
     color: var(--secondary-color);
     margin-bottom: 5%;
 }
-.experience article{
-    display: grid;
-    grid-template-columns: 20% 78%;
-    gap: 2%;
-    margin: 5% 0;
-}
 .experience .date, .experience__info h3{
     font-family: var(--titles-type);
     color: var(--accents-color);
@@ -296,4 +308,120 @@ footer h4{
 .project-conclusion{
     text-align: center;
     margin-bottom: 5%;
+}
+/*Responsive Tablet*/
+@media only screen and (max-width: 992px){
+    /*Images*/
+    .casestudies img{
+        padding: 0 10%;
+    }   
+    /*Buttons*/
+    .btn-link, button:not(.navbar-toggler){
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    /*Grids*/
+    .grid--3, .grid--2-3560, .grid--2-exp {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+    .md--grid-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*Header*/
+    .navbar-toggler{
+        color: transparent;
+        border: none;
+    }
+    .navbar-toggler-icon{
+        background-image: url(../assets/menu-icon.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+        margin: 5% 0;
+    }
+    /*Hero*/
+    .hero{
+        margin: 15% auto;
+    }
+    /*Footer*/
+    footer{
+        padding: 3% 0;
+    }
+    /*About Me*/
+    .aboutme__img{
+        object-fit: cover;
+        object-position: bottom;
+    }
+    .marquee--container{
+        position: initial;
+    }
+    .marquee--container li{
+        font-size: 2rem;
+    }
+    /*About me--Experience*/
+    .experience .date{
+        font-size: 1.5rem;
+    }
+}
+/*Responsive Mobile*/
+@media only screen and (max-width: 767px){
+    /*Texts*/
+    h1{
+        font-size: 2.7rem;
+    }
+    h2{
+        font-size: 2.3rem;
+    }
+    /*Images*/
+    .casestudies{
+        padding: 10% 5%;
+    }   
+    /*Spacing*/
+    section{
+        margin: 10% 5%;
+    }
+    /*Grids*/
+    .grid--2, .md--grid-2:not(.image--gallery){
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+    .md--grid-2:not(.image--gallery){
+        grid-template-rows: repeat(3, 1fr);
+    }
+    /*Header*/
+    header{
+        top: 0;
+    }
+    .navbar{
+        padding: 5%;
+    }
+    .navbar-toggler-icon{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    /*Hero*/
+    .hero{
+        margin: 15% 5%;
+    }
+    .home--hero{
+        padding: 0;
+    }
+    /*Footer*/
+    .footer-nav{
+        flex-direction: column;
+    }
+    .footer-nav li{
+        margin: 3% 0;
+    }
+    /*About Me*/
+    .marquee--container li{
+        font-size: 1.5rem;
+    }
+    /*Inner page*/
+    .project-quote h4{
+        font-size: 1.4rem;
+    }
 }
