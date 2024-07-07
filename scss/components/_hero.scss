@@ -1,0 +1,14 @@
+/*Hero*/
+.hero{
+    &--home{
+        padding: 5% 5% 10%;
+    }
+    &:not(.hero--home){
+        margin: 5% auto;
+    }
+    h1{
+        line-height: 105%;
+        letter-spacing: .15rem;
+        color: $secondary-color;
+    }
+}

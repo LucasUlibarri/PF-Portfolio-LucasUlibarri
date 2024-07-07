@@ -1,0 +1,122 @@
+/*Responsive Tablet*/
+@media only screen and (max-width: 992px){
+    /*Images*/
+    .casestudies{
+        img{
+            padding: 0 10%;
+        }
+    }
+    /*Buttons*/
+    .btn-link, button:not(.navbar-toggler){
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    /*Grids*/
+    .grid--3, .grid--2-3560, .grid--2-exp {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+    .md--grid-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*Header*/
+    .navbar-toggler{
+        color: transparent;
+        border: none;
+        &-icon{
+            background-image: url(../assets/menu-icon.svg);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    .nav-link{
+        font-size: 1.5rem;
+        margin: 5% 0;
+    }
+    /*Hero*/
+    .hero{
+        margin: 15% auto;
+    }
+    /*Footer*/
+    footer{
+        padding: 3% 0;
+    }
+    /*About Me*/
+    .aboutme__img{
+        object-fit: cover;
+        object-position: bottom;
+    }
+    .marquee--container{
+        position: initial;
+        li{
+            font-size: 2rem;
+        }
+    }
+    /*About me--Experience*/
+    .experience{
+        .date{
+            font-size: 1.5rem;
+        }
+    }
+}
+/*Responsive Mobile*/
+@media only screen and (max-width: 767px){
+    /*Texts*/
+    h1{
+        font-size: 2.7rem;
+    }
+    h2{
+        font-size: 2.3rem;
+    }
+    /*Images*/
+    .casestudies{
+        padding: 10% 5%;
+    }   
+    /*Spacing*/
+    section{
+        margin: 10% 5%;
+    }
+    /*Grids*/
+    .grid--2, .md--grid-2:not(.image--gallery){
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+    .md--grid-2:not(.image--gallery){
+        grid-template-rows: repeat(3, 1fr);
+    }
+    /*Header*/
+    header{
+        top: 0;
+    }
+    .navbar{
+        padding: 5%;
+    }
+    .navbar-toggler-icon{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    /*Hero*/
+    .hero{
+        margin: 15% 5%;
+    }
+    .hero--home{
+        padding: 0;
+    }
+    /*Footer*/
+    footer{
+        ul{
+            flex-direction: column;
+            li{
+                margin: 3% 0;
+            }
+        }
+    }
+    /*About Me*/
+    .marquee--container li{
+        font-size: 1.5rem;
+    }
+    /*Inner page*/
+    .project-quote h4{
+        font-size: 1.4rem;
+    }
+}
