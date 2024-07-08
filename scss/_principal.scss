@@ -46,16 +46,16 @@ section{
 /*Grids*/
 .grid{
     &--3{
-        @include grids(repeat(3,1fr), 2%)
+        @include grids(repeat(3,1fr), 2%, auto)
     }
     &--2{
-        @include grids(repeat(2,1fr), 5%)
+        @include grids(repeat(2,1fr), 5%, auto)
     }
     &--2-3560{
-        @include grids(35% 60%, 5%)
+        @include grids(35% 60%, 5%, auto)
     }
     &--2-exp{
-        @include grids(20% 78%, 2%);
+        @include grids(20% 78%, 2%, auto);
         margin: 5% 0;
     }
 }

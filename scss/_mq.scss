@@ -7,17 +7,16 @@
         }
     }
     /*Buttons*/
-    .btn-link, button:not(.navbar-toggler){
+    .btn{
         width: 100%;
         font-size: 1.3rem;
     }
     /*Grids*/
     .grid--3, .grid--2-3560, .grid--2-exp {
-        grid-template-columns: 1fr;
-        gap: 2%;
+        @include grids(1fr, 2%, auto)
     }
     .md--grid-2{
-        grid-template-columns: repeat(2, 1fr);
+         @include grids(repeat(2,1fr), 2%, auto);
     }
     /*Header*/
     .navbar-toggler{
@@ -78,8 +77,7 @@
     }
     /*Grids*/
     .grid--2, .md--grid-2:not(.image--gallery){
-        grid-template-columns: 1fr;
-        gap: 2%;
+        @include grids(1fr, 2%, auto);
     }
     .md--grid-2:not(.image--gallery){
         grid-template-rows: repeat(3, 1fr);

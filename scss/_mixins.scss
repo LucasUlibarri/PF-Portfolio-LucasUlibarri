@@ -1,8 +1,9 @@
 /*Mixins*/
-@mixin grids($gtc-value, $gap-value){
+@mixin grids($gtc-value, $gap-value, $gtr-value){
     display: grid;
     grid-template-columns: $gtc-value;
     gap: $gap-value;
+    grid-template-rows: $gtr-value;
 }
 @mixin images{
     height: 100%;

@@ -106,21 +106,25 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2%;
+  grid-template-rows: auto;
 }
 .grid--2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
+  grid-template-rows: auto;
 }
 .grid--2-3560 {
   display: grid;
   grid-template-columns: 35% 60%;
   gap: 5%;
+  grid-template-rows: auto;
 }
 .grid--2-exp {
   display: grid;
   grid-template-columns: 20% 78%;
   gap: 2%;
+  grid-template-rows: auto;
   margin: 5% 0;
 }
 
@@ -338,17 +342,22 @@ footer h4 {
     padding: 0 10%;
   }
   /*Buttons*/
-  .btn-link, button:not(.navbar-toggler) {
+  .btn {
     width: 100%;
     font-size: 1.3rem;
   }
   /*Grids*/
   .grid--3, .grid--2-3560, .grid--2-exp {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 2%;
+    grid-template-rows: auto;
   }
   .md--grid-2 {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    grid-template-rows: auto;
   }
   /*Header*/
   .navbar-toggler {
@@ -407,8 +416,10 @@ footer h4 {
   }
   /*Grids*/
   .grid--2, .md--grid-2:not(.image--gallery) {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 2%;
+    grid-template-rows: auto;
   }
   .md--grid-2:not(.image--gallery) {
     grid-template-rows: repeat(3, 1fr);
