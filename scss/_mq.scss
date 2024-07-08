@@ -73,7 +73,10 @@
     }   
     /*Spacing*/
     section{
-        margin: 10% 5%;
+        margin: 10% 0;
+    }
+    .row:not(.row-header){
+        margin: 0;
     }
     /*Grids*/
     .grid--2, .md--grid-2:not(.image--gallery){
@@ -95,10 +98,11 @@
     }
     /*Hero*/
     .hero{
-        margin: 15% 5%;
+        margin: 15% 0%;
+        padding: 0 5%;
     }
     .hero--home{
-        padding: 0;
+        padding: 0 10%;
     }
     /*Footer*/
     footer{

@@ -37,7 +37,7 @@ h2 {
 h3 {
   font-size: 2rem;
   font-family: "Satoishi", sans-serif;
-  letter-spacing: auto;
+  letter-spacing: normal;
 }
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
 p {
   font-size: 1.15rem;
   font-family: "Satoishi", sans-serif;
-  letter-spacing: auto;
+  letter-spacing: normal;
 }
 
 body {
@@ -195,7 +195,7 @@ header {
 
 /*Hero*/
 .hero--home {
-  padding: 5% 5% 10%;
+  padding: 12% 5% 12%;
 }
 .hero:not(.hero--home) {
   margin: 5% auto;
@@ -412,7 +412,10 @@ footer h4 {
   }
   /*Spacing*/
   section {
-    margin: 10% 5%;
+    margin: 10% 0;
+  }
+  .row:not(.row-header) {
+    margin: 0;
   }
   /*Grids*/
   .grid--2, .md--grid-2:not(.image--gallery) {
@@ -437,10 +440,11 @@ footer h4 {
   }
   /*Hero*/
   .hero {
-    margin: 15% 5%;
+    margin: 15% 0%;
+    padding: 0 5%;
   }
   .hero--home {
-    padding: 0;
+    padding: 0 10%;
   }
   /*Footer*/
   footer ul {
